@@ -11,7 +11,7 @@ export const Navbar = () => {
         <div className="ml-auto">
           <Link to="/demo">
             <button className="btn btn-primary">
-              Check the context in action
+              Check the Context In Action
             </button>
           </Link>
           <Link to="/signup">
