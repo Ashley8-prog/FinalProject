@@ -91,23 +91,26 @@ const SignUp = () => {
       </div> */}
 
       {/* Aqui empieza */}
-      <div className="contenedor">
-        <body class="align">
-          <div class="login">
-            <header class="login__header">
-              <h2>
-                <svg class="icon">{/* <use xlink:href="#icon-lock" /> */}</svg>
+      <div className="contenedor mt-2">
+        <body class="align mt-2">
+          <div class="login mt-0">
+            {/* <h1 className="usersig"> User Sign Up </h1> */}
+            {/* <header class="login__header">
+              <h2 className="arriba">
+                <svg class="icon mt-0"></svg>
                 Sign In
               </h2>
-            </header>
-
+            </header> */}
             <form action="#" class="login__form" method="POST">
               <div>
-                <label for="email">E-mail address</label>
+                <label for="email">
+                  <i class="fas fa-user"></i>
+                  <br />
+                </label>
                 <input
                   type="email"
                   name="email"
-                  placeholder="email"
+                  placeholder="user"
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}
@@ -115,7 +118,9 @@ const SignUp = () => {
               </div>
 
               <div>
-                <label for="password">Password</label>
+                <label for="password">
+                  <i class="fas fa-lock"></i>
+                </label>
                 <input
                   type="password"
                   id="password"
@@ -127,9 +132,9 @@ const SignUp = () => {
                 />
               </div>
 
-              <div className=" elboton row d-flex">
+              <div className=" elboton">
                 <button className="elboton" type="button" onClick={register}>
-                  Register
+                  Log in
                 </button>
               </div>
             </form>

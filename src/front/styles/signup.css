@@ -12,6 +12,11 @@ html {
 }
 
 body {
+  background-image: url(https://i.pinimg.com/originals/66/ad/69/66ad69725aa037d059d292a3c5a522ab.jpg);
+  background-repeat: no-repeat;
+}
+
+body {
   margin-top: 0;
   background-color: #eeeef4;
   font-family: "Varela Round", sans-serif;
@@ -51,7 +56,7 @@ svg {
 .button {
   background-color: #33cc77;
   color: #fff;
-  padding: 0.25em 1.5em;
+  /* padding: 0.25em 1.5em; */
 }
 
 .button:focus,
@@ -77,6 +82,8 @@ svg {
 }
 
 .login__header {
+  justify-content: start;
+  text-align: start;
   background-color: #40799a;
   border-top-left-radius: 1.25em;
   border-top-right-radius: 1.25em;
@@ -97,6 +104,7 @@ svg {
 }
 
 .login__form {
+  border-radius: 5%;
   background-color: #fff;
   border-bottom-left-radius: 1.25em;
   border-bottom-right-radius: 1.25em;
@@ -126,11 +134,26 @@ svg {
 .contenedor {
   margin-top: auto;
 }
+
 .elboton {
+  padding: 5px;
+  width: 100px;
+  margin: auto;
   border-style: none;
-  margin: 1px;
   border-radius: 20px;
   color: white;
-  background-color: #40799a;
-  padding: 2px;
+  background-color: #773418;
+  display: flex;
+  justify-content: center;
 }
+
+/* .usersig {
+  margin-top: 1px;
+  border-radius: 10px;
+  height: 50px;
+  padding-top: 15px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #ff5a43;
+  color: white;
+} */
