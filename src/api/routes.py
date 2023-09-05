@@ -114,6 +114,15 @@ def user_register():
         print(str(error))
         return jsonify({"message":"error al almacenar en BD"}), 500
 
+##Podría cambiarse
+@api.route('/menupage', methods=['POST', 'GET'])
+def menupage():
+    response_body = {
+        "message": "Hello! I'm a message that came from the backend, check the network tab on the google inspector and you will see the GET request"
+    }
+
+    return jsonify(response_body), 200
+
 
 @api.route("/sendmail", methods=["POST"])
 def endpoint_mail():
